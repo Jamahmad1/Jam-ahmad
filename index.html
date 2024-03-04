@@ -10,6 +10,11 @@
       margin: 0;
       padding: 0;
     }
+    .nav img{
+      width: 80px;
+      padding-left: 100px;
+      float: left;
+    }
     header {
       background-color: #333;
       color: #fff;
@@ -20,35 +25,53 @@
       margin: 0;
     }
     .container {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 0 20px;
+      margin: 20px;
+      display: flex;
+      justify-content: space-between;
+      min-width: 250px;
+      height: 40vh;
+      
     }
     .phone {
       border: 1px solid #ccc;
-      padding: 20px;
+      border-radius: 20px;
+     box-shadow:  20px 20px 30px rgba(0, 0, 0, 0.3) ;
+     padding: 20px;
       margin-bottom: 20px;
       background-color: #f9f9f9;
       display: flex;
       align-items: center;
     }
+    .phone:hover{ 
+      box-shadow:  20px 20px 30px rgba(0, 0, 0, 0.6) ;
+    }
+
     .phone img {
       max-width: 150px;
       margin-right: 20px;
+    }
+    button{
+      border-radius: 30px;
+      background-color: rgb(26, 95, 26);
+      color: white;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>New Iqra Mobile Shop Lodhran</h1>
-    <h2>Contact Number 0308-4519090</h2>
-    <h3>Super Milad Chowk Bahawalpur Road Lodhran</h3>
+    <div class="nav">
+      
+     <h1>New Iqra Mobile Shop Lodhran</h1>
+     <h2>Contact Number 0308-4519090</h2>
+     <h3>Super Milad Chowk Bahawalpur Road Lodhran</h3>
+    </div>
+    
    
   </header>
 
   <div class="container">
-    <div class="phone">
+    <div   class="phone">
       <img src="zero1.jpg" alt="Infinix">
       <div>
         <h2>Infinix Zero 30</h2> <Right>
@@ -56,6 +79,8 @@
         </Right>
         
         <p>Price: PKR 65000/-</p>
+        <button>Shop Now</button>
+
       </div>
     </div>
 
@@ -65,6 +90,8 @@
         <h2>Realme Note 50</h2>
         <p>RAM 8GB, Memory 256GB</p>
         <p>Price: PKR 23500/-</p>
+        <button>Shop Now</button>
+
       </div>
     </div>
 
@@ -74,6 +101,8 @@
         <h2>Oppo Reno 6</h2>
         <p>RAM 8GB, Memory 256GB</p>
         <p>Price: PKR 64999/-</p>
+        <button>Shop Now</button>
+
       
       </div>
     </div>

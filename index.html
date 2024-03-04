@@ -29,21 +29,22 @@
       display: flex;
       justify-content: space-between;
       min-width: 250px;
-      height: 40vh;
-      
+      height: auto; /* Change height to auto */
+      flex-wrap: wrap; /* Enable wrapping for smaller screens */
     }
     .phone {
       border: 1px solid #ccc;
       border-radius: 20px;
-     box-shadow:  20px 20px 30px rgba(0, 0, 0, 0.3) ;
-     padding: 20px;
+      box-shadow:  20px 20px 30px rgba(0, 0, 0, 0.3);
+      padding: 20px;
       margin-bottom: 20px;
       background-color: #f9f9f9;
       display: flex;
       align-items: center;
+      flex: 1 1 30%; /* Adjust the width of each phone card */
     }
     .phone:hover{ 
-      box-shadow:  20px 20px 30px rgba(0, 0, 0, 0.6) ;
+      box-shadow:  20px 20px 30px rgba(0, 0, 0, 0.6);
     }
 
     .phone img {
@@ -55,32 +56,36 @@
       background-color: rgb(26, 95, 26);
       color: white;
     }
+
+    /* Responsive adjustments */
+    @media only screen and (max-width: 768px) {
+      .container {
+        justify-content: center; /* Center align on smaller screens */
+      }
+      .phone {
+        flex: 1 1 100%; /* Full width for smaller screens */
+      }
+    }
   </style>
 </head>
 <body>
 
   <header>
     <div class="nav">
-      
-     <h1>New Iqra Mobile Shop Lodhran</h1>
-     <h2>Contact Number 0308-4519090</h2>
-     <h3>Super Milad Chowk Bahawalpur Road Lodhran</h3>
+      <h1>New Iqra Mobile Shop Lodhran</h1>
+      <h2>Contact Number 0308-4519090</h2>
+      <h3>Super Milad Chowk Bahawalpur Road Lodhran</h3>
     </div>
-    
-   
   </header>
 
   <div class="container">
-    <div   class="phone">
+    <div class="phone">
       <img src="zero1.jpg" alt="Infinix">
       <div>
-        <h2>Infinix Zero 30</h2> <Right>
-          <p>RAM 8GB, Memory 256GB</p>
-        </Right>
-        
+        <h2>Infinix Zero 30</h2>
+        <p>RAM 8GB, Memory 256GB</p>
         <p>Price: PKR 65000/-</p>
         <button>Shop Now</button>
-
       </div>
     </div>
 
@@ -91,7 +96,6 @@
         <p>RAM 8GB, Memory 256GB</p>
         <p>Price: PKR 23500/-</p>
         <button>Shop Now</button>
-
       </div>
     </div>
 
@@ -102,12 +106,9 @@
         <p>RAM 8GB, Memory 256GB</p>
         <p>Price: PKR 64999/-</p>
         <button>Shop Now</button>
-
-      
       </div>
     </div>
   </div>
-</div>
 
 </body>
 </html>
